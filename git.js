@@ -144,7 +144,16 @@
 
 
 
-//* pull
+//* pull request
+
+//? main -> production
+//? develop -> integration
+//? feature ->
+//? fix -> bug fic
+//? hotfix -> critical bug fic
+
+//todo: revert , reset , cherry-pick , rebase
+//? stash
 
 
 
