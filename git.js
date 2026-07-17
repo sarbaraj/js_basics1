@@ -129,7 +129,7 @@
 //* git diff test..main   //to see file changes
 
 
-//pull push branch merge 
+//apull push branch merge 
 
 //! remote
 //* git remote add origin <remote_url>
@@ -153,7 +153,55 @@
 //? hotfix -> critical bug fic
 
 //todo: revert , reset , cherry-pick , rebase
-//? stash
+//? stash  // it is temporary storage 
+
+//you have to go back to c where we are at a-> b -> c ->d
+// a-> b -> c ->d -> e    // revert
+        //do this if till d you have already commit to github
+
+// a -> b -> c            // reset
+        // do this if d you has not been committed to github
+
+//* git revert <commit_id>
+//* git revert HEAD~n   -> n = 1,2,3,....n 
+
+//error
+//* git reset <commit_id>
+//* git reset HEAD~n   -> n = 1,2,3,....n 
+        //* --soft    -> staged         //keep in stages
+        //* --mixed   -> changes        //by default it is mined // keep in changed
+        //* --hard    ->delete changes  //does not keep anywhere 
+
+//* changes after last commit
+//* git restore git.js
+//* git restore --staged git.js
+//* git restore --staged .
+//* git commit --amend -m "git reset commands"  -> edit last commit message
+//* git commit -am 'add & commit'
+//* git add . && git commit
+
+
+//* git commit --help
+        //help to open git-commit(1) Manual Page in website to see all possible codes
+
+
+//stash  
+//* git stash                           -> stash changes
+//* git stash -m 'message'              -> stash changes with message
+
+//* git stash list                      -> list stashed changes
+//* git stash pop                       -> apply and drop last stash change
+//* git stash apply                     -> apply last stash change
+//* git stash drop                      -> drop last stash change   // removes one from top of stack
+//* git stash clear                     -> drop all stash change
+
+
+
+
+
+
+
+
 
 
 
